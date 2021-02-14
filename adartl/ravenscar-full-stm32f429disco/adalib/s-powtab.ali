@@ -1,0 +1,37 @@
+V "GNAT Lib v2020"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/skylt/src/ada_minipacman/pacman/adartl/ravenscar-full-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.powten_table%s	s-powtab.ads		8bf373f6 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20210207012509 db831581 system%s
+D s-powtab.ads		20210207012509 50706677 system.powten_table%s
+G a e
+X 1 system.ads
+50K9*System 164e11 2|34r9 70r5
+X 2 s-powtab.ads
+34K16*Powten_Table 1|50k9 2|70l12 70e24
+37N4*Maxpow 45r34
+45a4*Powten(long_long_float)
+

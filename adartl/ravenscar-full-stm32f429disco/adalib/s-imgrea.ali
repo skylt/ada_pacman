@@ -1,0 +1,168 @@
+V "GNAT Lib v2020"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/skylt/src/ada_minipacman/pacman/adartl/ravenscar-full-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.img_real%b	s-imgrea.adb		8f828546 NE OL PK
+W system%s		system.ads		system.ali
+Z system.fat_llf%s	s-fatllf.ads		s-fatllf.ali
+W system.float_control%s  s-flocon.adb		s-flocon.ali
+W system.img_llu%s	s-imgllu.adb		s-imgllu.ali
+W system.img_uns%s	s-imguns.adb		s-imguns.ali
+W system.powten_table%s	s-powtab.ads		s-powtab.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+N A490:13 codepeer intentional "test always true" "test for infinity"
+
+U system.img_real%s	s-imgrea.ads		44188213 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20210207012509 76789da1 ada%s
+D a-except.ads		20210207012509 a7106115 ada.exceptions%s
+D a-unccon.ads		20210207012509 0e9b276f ada.unchecked_conversion%s
+D system.ads		20210207012509 db831581 system%s
+D s-fatgen.ads		20210207012509 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20210207012509 4520ef02 system.fat_gen%b
+D s-fatllf.ads		20210207012509 4d5c1475 system.fat_llf%s
+D s-flocon.ads		20210207012509 e0fc433c system.float_control%s
+D s-flocon.adb		20210207012509 0b40e04e system.float_control%b
+D s-imgllu.ads		20210207012509 49c900c3 system.img_llu%s
+D s-imgrea.ads		20210207012509 9f9b9792 system.img_real%s
+D s-imgrea.adb		20210207012509 286779b9 system.img_real%b
+D s-imguns.ads		20210207012509 9ff43cf7 system.img_uns%s
+D s-parame.ads		20210207012509 8e90778f system.parameters%s
+D s-powtab.ads		20210207012509 50706677 system.powten_table%s
+D s-stalib.ads		20210207012509 6b7a13f2 system.standard_library%s
+D s-traent.ads		20210207012509 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210207012509 5ecf7212 system.unsigned_types%s
+G a e
+G c Z s b [image_ordinary_fixed_point system__img_real 37 14 none]
+G c Z s b [image_floating_point system__img_real 50 14 none]
+G c Z s b [set_image_real system__img_real 61 14 none]
+G c Z b b [is_negative system__img_real 73 13 none]
+X 4 system.ads
+50K9*System 164e11 11|34r9 81r5 12|32r6 32r33 33r6 33r33 34r6 34r33 35r6
+. 35r33 36r6 38r14 470r7 699r5
+X 8 s-flocon.ads
+34K16*Float_Control 59e25 12|36w13 470r14
+39U14*Reset 12|470s28
+X 10 s-imgllu.ads
+38K16*Img_LLU 61e19 12|32w13 32r40
+51U14*Set_Image_Long_Long_Unsigned 12|385s13
+X 11 s-imgrea.ads
+34K16*Img_Real 4|50k9 11|81l12 81e20 12|38b21 699l12 699t20
+37U14*Image_Ordinary_Fixed_Point 38>7 39=7 40<7 41>7 12|115b14 134l8 134t34
+38f7 V{long_long_float} 12|116b7 126r10 133r23
+39a7 S{string} 12|117b7 121r22 127m10 133m26
+40i7 P{natural} 12|118b7 128m10 130m10 133m29
+41i7 Aft{natural} 12|119b7 133r35
+50U14*Image_Floating_Point 51>7 52=7 53<7 54>7 12|80b14 109l8 109t28
+51f7 V{long_long_float} 12|81b7 99r28 99r40 100r60 108r23
+52a7 S{string} 12|82b7 86r22 102m10 108m26
+53i7 P{natural} 12|83b7 103m10 105m10 108m29
+54i7 Digs{natural} 12|84b7 108r35
+61U14*Set_Image_Real 62>7 63<7 64=7 65>7 66>7 67>7 12|108s7 133s7 140b14
+. 697l8 697t22
+62f7 V{long_long_float} 12|141b7 476r14 489r13 501r16 520r10 521r15 526r13
+. 527r16 532r13 533r64
+63a7 S{string} 12|142b7 398m10
+64i7 P{natural} 12|143b7 397m10 397r15 398r13
+65i7 Fore{natural} 12|144b7 440r15 539r31 633r34 642r34 671r31
+66i7 Aft{natural} 12|145b7 148r48 440r26
+67i7 Exp{natural} 12|146b7 442r13 443r22 544r13 547r40 566r10 693r21
+76N4*Max_Real_Image_Length 12|154r27
+X 12 s-imgrea.adb
+56N4 Maxdigs 581r32 591r33 654r21 661r27 664r35
+60N4 Unsdigs 374r25
+64N4 Maxscaling 219r64 230r25 291r58 302r24
+73V13 Is_Negative{boolean} 73>26 74b30 99s15 533s51
+73f26 V{long_long_float}
+148i7 NFrac{natural} 542r21 572r29 632r22 636r24 642r50 643r34 645r31 654r13
+. 655r27 664r27 680r27
+149e7 Sign{character} 407r13 522m10 528m10 534m13 536m13
+150f7 X{long_long_float} 212r13 218r22 220m16 248r22 277m13 282r16 290r22
+. 292m16 314r22 343m13 356m10 356r15 358r13 359m13 359r18 374r13 377r54 386r64
+. 521m10 527m10 581r19 609m19 609r24 617m19 617r24 623m19 623r24
+151i7 Scale{integer} 219r55 221m16 221r25 230r16 278m13 278r22 291r50 293m16
+. 293r25 302r16 344m13 344r22 360m13 360r22 472m7 598r33 667m16 667r25 680r19
+152i7 Expon{integer} 680m10 685r13 687r43 690r44
+154a7 Digs{string} 378m16 378r16 387m16 387r16 428r18 600m22 666m16 672r15
+. 687m51 687r51 690m52 690r52
+158i7 Ndigs{natural} 375m13 378m22 378r22 384m13 387m22 387r22 599m22 599r31
+. 600r28 632r13 636r32 637r26 642r42 643r26 645r23 645r42 665m16 665r25 666r22
+. 674r23 683m10 687m57 687r57 690m58 690r58 693r27 694r23
+161U17 Adjust_Scale 161>31 203b17 363l11 363t23 591s19 655s13 661s13
+161i31 S{natural} 203b31 212r25 219r40 250r32 261r36 282r29 291r39 316r32
+. 327r36 358r26
+170U17 Convert_Integer 369b17 389l11 389t26 592s19 610s19 656s13 662s13
+175U17 Set 175>22 195r22 395b17 399l11 399t14 409s16 412s13 416s16 428s13
+. 447s13 458s13 493s13 494s13 495s13 496s13 502s13 503s13 504s13 505s13 509s13
+. 510s13 511s13 540s10 541s10 545s13 546s13 634s13 635s13 644s13 672s10 673s10
+. 682s10 686s13 689s13
+175e22 C{character} 395b22 398r19
+178U17 Set_Blanks_And_Sign 178>38 405b17 419l11 419t30 539s10 633s13 642s13
+. 671s10
+178i38 N{integer} 405b38 408r27 415r27
+184U17 Set_Digs 184>27 184>30 196r22 425b17 430l11 430t19 637s13 643s13 645s13
+. 674s10 694s10
+184i27 S{natural} 425b27 427r19
+184i30 E{natural} 425b30 427r24
+187U17 Set_Special_Fill 187>35 436b17 449l11 449t27 497s13 506s13 512s13
+187i35 N{natural} 436b35 440r32
+192U17 Set_Zeros 192>28 197r22 455b17 460l11 460t20 542s10 547s13 636s13
+. 693s10
+192i28 N{integer} 455b28 457r24
+204i10 Lo{natural} 243m13 247r24 252r22 258m22 263r22 309m13 313r24 318r22
+. 329r22 335m22
+205i10 Hi{natural} 244m13 247r29 252r28 263r28 269m22 310m13 313r29 318r28
+. 324m22 329r28
+206i10 Mid{natural} 247m16 248r34 253m22 253r29 258r28 264m22 264r29 269r28
+. 278r30 313m16 314r34 320m22 320r29 324r28 331m22 331r29 335r28 344r30
+207f10 XP{long_long_float} 218m16 219r26 220r21 248m16 250r19 254m22 254r28
+. 261r22 265m22 265r28 277r18 290m16 291r26 292r21 314m16 316r19 319m22 319r28
+. 327r22 330m22 330r28 343r18
+408i17 J{integer}
+415i17 J{integer}
+427i14 J{integer} 428r24
+437i10 F{natural} 440m10 443m13 443r18 446r24
+446i14 J{integer}
+457i14 J{integer}
+572i13 NF{natural} 598r41 608r22 616r22 617r36 618m19 624m19 624r25
+598i23 J{integer}
+664i17 J{integer}
+X 13 s-imguns.ads
+38K16*Img_Uns 12|33w13 33r40 13|60e19
+50U14*Set_Image_Unsigned 12|376s13 687s13 690s13
+X 15 s-powtab.ads
+34K16*Powten_Table 12|34w13 34r40 15|70e24
+37N4*Maxpow 12|218r34 221r33 244r19 287r36 290r34 293r33 310r19 616r27 623r36
+. 624r30
+45a4*Powten(long_long_float) 12|212r17 218r26 219r32 248r26 250r24 261r28
+. 282r21 287r28 290r26 291r31 314r26 316r24 327r28 358r18 374r17 581r24 617r28
+. 623r28
+X 18 s-unstyp.ads
+40K16*Unsigned_Types 12|35w13 35r40 18|233e26
+46M9*Unsigned 12|60r26 377r16 687r33 690r33
+48M9*Long_Long_Unsigned 12|58r19 386r16
+

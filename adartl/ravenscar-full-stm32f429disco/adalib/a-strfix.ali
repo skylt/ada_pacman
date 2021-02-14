@@ -1,0 +1,411 @@
+V "GNAT Lib v2020"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/skylt/src/ada_minipacman/pacman/adartl/ravenscar-full-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U ada.strings.fixed%b	a-strfix.adb		97ae1e3d NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.maps%s	a-strmap.adb		a-strmap.ali
+W ada.strings.search%s	a-strsea.adb		a-strsea.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+N A195:10 codepeer false_positive "test always false" "self fullfilling prophecy"
+
+U ada.strings.fixed%s	a-strfix.ads		fec1aafc NE OL PR PK
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.maps%s	a-strmap.adb		a-strmap.ali
+
+D ada.ads		20210207012509 76789da1 ada%s
+D a-charac.ads		20210207012509 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210207012509 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210207012509 a7106115 ada.exceptions%s
+D a-string.ads		20210207012509 90ac6797 ada.strings%s
+D a-strfix.ads		20210207012509 86d6bc21 ada.strings.fixed%s
+D a-strfix.adb		20210207012509 407f43ec ada.strings.fixed%b
+D a-strmap.ads		20210207012509 e8bb714a ada.strings.maps%s
+D a-strmap.adb		20210207012509 7e646b75 ada.strings.maps%b
+D a-strsea.ads		20210207012509 b9bc90ba ada.strings.search%s
+D a-unccon.ads		20210207012509 0e9b276f ada.unchecked_conversion%s
+D system.ads		20210207012509 db831581 system%s
+D s-bitops.ads		20210207012509 0765e3a3 system.bit_ops%s
+D s-parame.ads		20210207012509 8e90778f system.parameters%s
+D s-secsta.ads		20210207012509 56a2861c system.secondary_stack%s
+D s-stalib.ads		20210207012509 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20210207012509 2dc34a04 system.storage_elements%s
+D s-traent.ads		20210207012509 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210207012509 5ecf7212 system.unsigned_types%s
+G a e
+G c Z s b [move ada__strings__fixed 50 14 none]
+G c Z s b [index ada__strings__fixed 104 13 none]
+G c Z s b [index ada__strings__fixed 117 13 none]
+G c Z s b [index ada__strings__fixed 143 13 none]
+G c Z s b [index ada__strings__fixed 152 13 none]
+G c Z s b [index ada__strings__fixed 169 13 none]
+G c Z s b [index ada__strings__fixed 177 13 none]
+G c Z s b [index_non_blank ada__strings__fixed 196 13 none]
+G c Z s b [index_non_blank ada__strings__fixed 206 13 none]
+G c Z s b [count ada__strings__fixed 213 13 none]
+G c Z s b [count ada__strings__fixed 221 13 none]
+G c Z s b [count ada__strings__fixed 233 13 none]
+G c Z s b [find_token ada__strings__fixed 241 14 none]
+G c Z s b [find_token ada__strings__fixed 260 14 none]
+G c Z s b [translate ada__strings__fixed 274 13 none]
+G c Z s b [translate ada__strings__fixed 281 13 none]
+G c Z s b [translate ada__strings__fixed 292 14 none]
+G c Z s b [translate ada__strings__fixed 298 14 none]
+G c Z s b [replace_slice ada__strings__fixed 310 14 none]
+G c Z s b [replace_slice ada__strings__fixed 336 13 none]
+G c Z s b [insert ada__strings__fixed 364 13 none]
+G c Z s b [insert ada__strings__fixed 379 14 none]
+G c Z s b [overwrite ada__strings__fixed 392 13 none]
+G c Z s b [overwrite ada__strings__fixed 414 14 none]
+G c Z s b [delete ada__strings__fixed 427 13 none]
+G c Z s b [delete ada__strings__fixed 445 14 none]
+G c Z s b [trim ada__strings__fixed 468 13 none]
+G c Z s b [trim ada__strings__fixed 479 14 none]
+G c Z s b [trim ada__strings__fixed 493 13 none]
+G c Z s b [trim ada__strings__fixed 503 14 none]
+G c Z s b [head ada__strings__fixed 519 13 none]
+G c Z s b [head ada__strings__fixed 530 14 none]
+G c Z s b [tail ada__strings__fixed 545 13 none]
+G c Z s b [tail ada__strings__fixed 556 14 none]
+G c Z s b [Omultiply ada__strings__fixed 575 13 none]
+G c Z s b [Omultiply ada__strings__fixed 582 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 6|22r6 43r9 596r5 7|41r6 41r28 42r6 44r14 55r12 62r12 69r12
+. 77r12 85r12 93r12 98r12 104r12 110r12 116r12 121r12 130r12 138r12 759r5
+X 5 a-string.ads
+16K13*Strings 1|16k9 5|35e16 6|22r10 43r13 507r30 596r9 7|41r10 41r32 42r10
+. 44r18 55r16 62r16 69r16 77r16 85r16 93r16 98r16 104r16 110r16 116r16 121r16
+. 130r16 138r16 644r15 661r15 678r15 749r30 759r9
+19e4*Space{character} 6|55r31 317r31 450r30 483r30 508r30 522r29 534r30 548r29
+. 560r30 7|230r30 246r29 275r30 333r31 528r32 541r29 570r30 703r30 750r30
+27X4*Length_Error 7|378r31 385r31 389r28
+27X33*Index_Error 7|206r19 299r16 442r16 489r16
+29E9*Alignment 29e44 6|54r17 316r17 449r17 482r17 507r17 533r17 559r17 7|229r17
+. 274r17 332r17 527r18 569r17 702r17 749r17
+29n24*Left{29E9} 6|54r31 316r31 449r30 482r30 507r38 533r30 559r30 7|229r30
+. 274r30 332r31 373r24 397r18 527r32 569r30 702r30 749r38
+29n30*Right{29E9} 7|381r24 404r18
+29n37*Center{29E9} 7|388r24 411r18
+30E9*Truncation 30e43 6|53r17 315r17 383r18 418r18 7|316r18 331r17 469r18
+. 526r18
+30n24*Left{30E9} 7|365r18
+30n30*Right{30E9} 6|418r32 7|368r18 469r32
+30n37*Error{30E9} 6|53r31 315r31 383r32 7|280r24 316r32 331r31 371r18 526r32
+. 575r24
+31E9*Membership 31e40 6|172r16 181r17 245r16 263r16 7|67r16 91r17 127r16
+. 135r16
+31n24*Inside{31E9} 6|172r30 181r31 7|67r30 91r31
+31n32*Outside{31E9} 7|720r51 729r47
+32E9*Direction 32e42 6|108r17 121r17 146r17 155r17 173r16 182r17 199r16 208r16
+. 7|53r17 60r17 68r16 75r17 83r17 92r17 97r16 103r16
+32n24*Forward{32E9} 6|108r30 121r30 146r30 155r30 173r30 182r30 199r29 208r29
+. 7|53r30 60r30 68r30 75r30 83r30 92r30 97r29 103r29 646r67 680r67 720r69
+32n33*Backward{32E9} 7|663r68 690r46 729r65
+33E9*Trim_End 33e42 6|470r16 481r17 7|640r16 701r17
+33n24*Left{33E9} 7|644r23
+33n30*Right{33E9} 7|661r23
+33n37*Both{33E9} 7|678r23
+X 6 a-strfix.ads
+43K21*Fixed 5|16k13 6|596l17 596e22 7|44b26 759l17 759t22
+50U14*Move 51>7 52<7 53>7 54>7 55>7 7|233s7 278s7 319s7 328b14 429l8 429t12
+. 472s7 531s7 573s7 706s7 753s7
+51a7 Source{string} 7|233r13 278r13 319r13 329b7 335r37 336r37 337r37 361r20
+. 366r26 369r26 374r37 376r27 382r37 383r35 398r59 409r57 421r72 472r13 573r13
+. 753r13
+52a7 Target{string} 7|234r13 279r13 320r13 330b7 339r37 340r37 341r37 361m10
+. 366m16 369m16 375m25 376r54 383m25 398m16 401m19 406m19 409m16 418m22 421m19
+. 424m22 473r13 574r13 754r13
+53e7 Drop{5|30E9} 7|280r13 321r13 331b7 364r15 474r13 575r13
+54e7 Justify{5|29E9} 7|235r13 281r13 332b7 372r21 396r15 576r13 708r13 755r13
+55e7 Pad{character} 7|236r13 282r13 333b7 349r28 401r33 406r33 418r36 424r36
+. 577r13 709r13 756r13
+104V13*Index{natural} 105>7 106>7 107>7 108>7 109>7 115r19 7|79b13
+105a7 Source{string} 113r23 113r55 7|80b7
+106a7 Pattern{string} 112r8 7|81b7
+107i7 From{positive} 113r47 7|82b7
+108e7 Going{5|32E9} 7|83b7
+109p7 Mapping{8|130P9} 7|84b7
+117V13*Index{natural} 118>7 119>7 120>7 121>7 122>7 7|71b13
+118a7 Source{string} 126r23 126r55 7|72b7
+119a7 Pattern{string} 125r8 7|73b7
+120i7 From{positive} 126r47 7|74b7
+121e7 Going{5|32E9} 7|75b7
+122a7 Mapping{8|107A9} 7|76b7
+143V13*Index{natural} 144>7 145>7 146>7 147>7 7|50b13
+144a7 Source{string} 7|51b7
+145a7 Pattern{string} 149r16 7|52b7
+146e7 Going{5|32E9} 7|53b7
+147a7 Mapping{8|107A9} 7|54b7
+152V13*Index{natural} 153>7 154>7 155>7 156>7 7|57b13
+153a7 Source{string} 7|58b7
+154a7 Pattern{string} 158r16 7|59b7
+155e7 Going{5|32E9} 7|60b7
+156p7 Mapping{8|130P9} 7|61b7
+169V13*Index{natural} 170>7 171>7 172>7 173>7 7|64b13 720s14 729s9
+170a7 Source{string} 7|65b7
+171a7 Set{8|46A9} 7|66b7 720r29 729r24
+172e7 Test{5|31E9} 7|67b7 720r42 729r38
+173e7 Going{5|32E9} 7|68b7 720r60 729r56
+177V13*Index{natural} 178>7 179>7 180>7 181>7 182>7 7|87b13
+178a7 Source{string} 184r20 184r52 7|88b7
+179a7 Set{8|46A9} 7|89b7
+180i7 From{positive} 184r44 7|90b7
+181e7 Test{5|31E9} 7|91b7
+182e7 Going{5|32E9} 7|92b7
+196V13*Index_Non_Blank{natural} 197>7 198>7 199>7 203r19 7|100b13
+197a7 Source{string} 201r19 201r51 7|101b7
+198i7 From{positive} 201r43 7|102b7
+199e7 Going{5|32E9} 7|103b7
+206V13*Index_Non_Blank{natural} 207>7 208>7 7|95b13 646s42 663s43 680s42
+. 690s21
+207a7 Source{string} 7|96b7
+208e7 Going{5|32E9} 7|97b7
+213V13*Count{natural} 214>7 215>7 216>7 7|106b13
+214a7 Source{string} 7|107b7
+215a7 Pattern{string} 218r16 7|108b7
+216a7 Mapping{8|107A9} 7|109b7
+221V13*Count{natural} 222>7 223>7 224>7 7|112b13
+222a7 Source{string} 7|113b7
+223a7 Pattern{string} 226r16 7|114b7
+224p7 Mapping{8|130P9} 7|115b7
+233V13*Count{natural} 234>7 235>7 7|118b13
+234a7 Source{string} 7|119b7
+235a7 Set{8|46A9} 7|120b7
+241U14*Find_Token 242>7 243>7 244>7 245>7 246<7 247<7 251r21 7|123b14
+242a7 Source{string} 249r20 249r52 7|124b7
+243a7 Set{8|46A9} 7|125b7
+244i7 From{positive} 249r44 7|126b7
+245e7 Test{5|31E9} 7|127b7
+246i7 First{positive} 7|128b7
+247i7 Last{natural} 7|129b7
+260U14*Find_Token 261>7 262>7 263>7 264<7 265<7 7|132b14
+261a7 Source{string} 7|133b7
+262a7 Set{8|46A9} 7|134b7
+263e7 Test{5|31E9} 7|135b7
+264i7 First{positive} 7|136b7
+265i7 Last{natural} 7|137b7
+274V13*Translate{string} 275>7 276>7 7|608b13 621l8 621t17
+275a7 Source{string} 278r42 7|609b7 612r29 616r16 617r23 617r58
+276p7 Mapping{8|130P9} 7|610b7 617r45
+281V13*Translate{string} 282>7 283>7 7|584b13 596l8 596t17
+282a7 Source{string} 285r42 7|585b7 588r29 591r16 592r23 592r61
+283a7 Mapping{8|107A9} 7|586b7 592r52
+292U14*Translate 293=7 294>7 7|623b14 632l8 632t17
+293a7 Source{string} 7|624b7 629r16 630m10 630r37
+294p7 Mapping{8|130P9} 7|625b7 630r24
+298U14*Translate 299=7 300>7 7|598b14 606l8 606t17
+299a7 Source{string} 7|599b7 603r16 604m10 604r40
+300a7 Mapping{8|107A9} 7|600b7 604r31
+310U14*Replace_Slice 311=7 312>7 313>7 314>7 315>7 316>7 317>7 7|521b14 532l8
+. 532t21
+311a7 Source{string} 323r19 324r27 7|522b7 531r28 531m52
+312i7 Low{positive} 323r8 7|523b7 531r36
+313i7 High{natural} 324r19 7|524b7 531r41
+314a7 By{string} 7|525b7 531r47
+315e7 Drop{5|30E9} 7|526b7 531r60
+316e7 Justify{5|29E9} 7|527b7 531r66
+317e7 Pad{character} 7|528b7 531r75
+336V13*Replace_Slice{string} 337>7 338>7 339>7 340>7 7|481b13 519l8 519t21
+. 531s13
+337a7 Source{string} 343r19 344r27 346r47 348r38 349r25 353r33 355r24 357r41
+. 7|482b7 488r16 488r47 495r37 499r31 509r40 509r48 512r15 512r35 517r25
+338i7 Low{positive} 343r8 345r31 346r41 351r17 353r27 7|483b7 488r10 492r18
+. 495r31 509r64 517r43
+339i7 High{natural} 344r19 345r23 348r52 351r9 355r38 7|484b7 488r40 492r10
+. 499r45 512r23
+340a7 By{string} 347r40 349r57 354r11 357r57 7|485b7 503r27 510r50 510r64
+. 511r33 517r60
+364V13*Insert{string} 365>7 366>7 367>7 7|289b13 310l8 310t14 319s23 517s17
+365a7 Source{string} 370r22 370r42 371r19 372r39 7|290b7 294r29 295r45 298r24
+. 298r40 303r9 303r17 307r9 307r27
+366i7 Before{positive} 370r8 7|291b7 295r36 298r10 303r33 307r17 517r33
+367a7 New_Item{string} 371r51 372r55 7|292b7 294r45 304r36 305r9 306r23 517r48
+379U14*Insert 380=7 381>7 382>7 383>7 7|312b14 322l8 322t14
+380a7 Source{string} 385r30 385r50 7|313b7 319r31 320m23
+381i7 Before{positive} 385r16 7|314b7 319r39
+382a7 New_Item{string} 7|315b7 319r47
+383e7 Drop{5|30E9} 7|316b7 321r23
+392V13*Overwrite{string} 393>7 394>7 395>7 7|435b13 463l8 463t17 472s23
+393a7 Source{string} 398r24 398r44 400r23 400r39 401r25 404r21 405r32 7|436b7
+. 441r26 441r42 448r15 449r26 452r50 456r12 456r20 460r12 460r50
+394i7 Position{positive} 398r8 400r12 401r14 405r21 7|437b7 441r10 449r15
+. 452r39 456r36 460r20
+395a7 New_Item{string} 400r55 401r56 405r47 7|438b7 449r41 457r39 458r12
+. 459r26 460r31
+414U14*Overwrite 415=7 416>7 417>7 418>7 7|465b14 475l8 475t17
+415a7 Source{string} 420r32 420r52 7|466b7 472r34 473m23
+416i7 Position{positive} 420r16 7|467b7 472r42
+417a7 New_Item{string} 7|468b7 472r52
+418e7 Drop{5|30E9} 7|469b7 474r23
+427V13*Delete{string} 428>7 429>7 430>7 7|178b13 223l8 223t14 233s24
+428a7 Source{string} 433r31 434r45 437r8 7|179b7 186r49 189r33 192r25 193r27
+. 203r20 204r20 211r49 212r35 216r15 216r23 218r15 218r38
+429i7 From{positive} 432r20 433r23 437r28 438r40 7|180b7 184r10 192r13 203r13
+. 203r45 211r42 212r62 216r39
+430i7 Through{natural} 432r28 434r34 437r36 438r30 7|181b7 184r17 193r17
+. 203r52 212r52 218r23
+445U14*Delete 446=7 447>7 448>7 449>7 450>7 7|225b14 237l8 237t14
+446a7 Source{string} 453r31 454r45 7|226b7 233r32 234m24
+447i7 From{positive} 452r20 453r23 7|227b7 233r40
+448i7 Through{natural} 452r28 454r34 7|228b7 233r46
+449e7 Justify{5|29E9} 7|229b7 235r24
+450e7 Pad{character} 7|230b7 236r24
+468V13*Trim{string} 469>7 470>7 7|638b13 697l8 697t12 706s13
+469a7 Source{string} 472r38 7|639b7 646r59 655r55 657r39 657r54 663r60 672r62
+. 674r39 674r47 680r59 690r38 693r39
+470e7 Side{5|33E9} 7|640b7 643r12
+479U14*Trim 480=7 481>7 482>7 483>7 7|699b14 710l8 710t12
+480a7 Source{string} 7|700b7 706r19 707m13
+481e7 Side{5|33E9} 7|701b7 706r27
+482e7 Justify{5|29E9} 7|702b7 708r24
+483e7 Pad{character} 7|703b7 709r20
+493V13*Trim{string} 494>7 495>7 496>7 7|712b13 743l8 743t12 753s24
+494a7 Source{string} 498r38 7|713b7 720r21 729r16 741r30
+495a7 Left{8|46A9} 7|714b7 720r36
+496a7 Right{8|46A9} 7|715b7 729r31
+503U14*Trim 504=7 505>7 506>7 507>7 508>7 7|745b14 757l8 757t12
+504a7 Source{string} 7|746b7 753r30 754m24
+505a7 Left{8|46A9} 7|747b7 753r38
+506a7 Right{8|46A9} 7|748b7 753r44
+507e7 Justify{5|29E9} 7|749b7 755r24
+508e7 Pad{character} 7|750b7 756r24
+519V13*Head{string} 520>7 521>7 522>7 7|243b13 269l8 269t12 278s24
+520a7 Source{string} 7|244b7 251r18 253r25 253r33 253r49 260r26 260r44 262r22
+521i7 Count{natural} 524r37 7|245b7 248r43 251r10 253r64 262r43
+522e7 Pad{character} 7|246b7 263r30
+530U14*Head 531=7 532>7 533>7 534>7 7|271b14 283l8 283t12
+531a7 Source{string} 7|272b7 278r30 279m24
+532i7 Count{natural} 7|273b7 278r38
+533e7 Justify{5|29E9} 7|274b7 281r24
+534e7 Pad{character} 7|275b7 278r45 282r24
+545V13*Tail{string} 546>7 547>7 548>7 7|538b13 564l8 564t12 573s24
+546a7 Source{string} 7|539b7 546r18 547r30 547r38 547r65 556r35 560r29 560r60
+547i7 Count{natural} 550r37 7|540b7 543r43 546r10 547r52 556r27 560r21 560r50
+548e7 Pad{character} 7|541b7 557r30
+556U14*Tail 557=7 558>7 559>7 560>7 7|566b14 578l8 578t12
+557a7 Source{string} 7|567b7 573r30 574m24
+558i7 Count{natural} 7|568b7 573r38
+559e7 Justify{5|29E9} 7|569b7 576r24
+560e7 Pad{character} 7|570b7 573r45 577r24
+575V14*"*"{string} 576>7 577>7 7|144b14 156l9 156t11
+576i7 Left{natural} 579r36 7|145b7 148r29
+577e7 Right{character} 7|146b7 152r24
+582V14*"*"{string} 583>7 584>7 7|158b14 172l9 172t11
+583i7 Left{natural} 586r43 587r36 7|159b7 162r29 166r21
+584a7 Right{string} 586r20 586r66 587r43 7|160b7 162r36 167r31 167r52 168r23
+X 7 a-strfix.adb
+148a7 Result{string} 151r16 152m10 155r14
+151i11 J{integer} 152r18
+162a7 Result{string} 167m10 171r14
+163i7 Ptr{integer} 167r18 167r25 168m10 168r17
+166i11 J{integer}
+186A21 Result_Type{string}<integer> 189r20
+211i13 Front{integer} 215r26 217r21
+212a13 Result{string} 215m13 217m13 217r34 220r20
+248A15 Result_Type{string}<integer> 253r12 257r22
+257a13 Result{248A15} 260m13 263m16 266r20
+262i17 J{integer} 263r24
+294a7 Result{string} 302m7 304m7 306m7 306r46 309r14
+295i7 Front{integer} 302r20 304r15 304r28 306r15
+335i7 Sfirst{integer} 369r34 369r44 374r45 376r35 376r45 382r45
+336i7 Slast{integer} 366r34 366r57 374r65 382r55 383r43 383r66
+337i7 Slength{integer} 360r10 363r13 398r43 400r34 405r43 409r32 413r64 421r56
+. 423r42
+339i7 Tfirst{integer} 398r24 398r34 400r25 405r25 414r53 417r28
+340i7 Tlast{integer} 400r45 405r35 409r24 409r47 423r53
+341i7 Tlength{integer} 360r20 363r23 366r42 369r53 374r54 382r63 383r51 413r54
+343V16 Is_Padding{boolean} 343>28 346b16 355l11 355t21 374s25 382s25
+343a28 Item{string} 346b28 348r19 349r16
+348i14 J{integer} 349r22
+400i20 I{integer} 401r27
+405i20 I{integer} 406r27
+413i19 Front_Pad{integer} 414r62
+414i19 Tfirst_Fpad{integer} 417r38 421r27 421r42 423r28
+417i23 I{integer} 418r30
+423i23 I{integer} 424r30
+446i10 Result_Length{natural} 451r32
+451a10 Result{string} 455m10 457m10 459m10 459r49 461r17
+452i10 Front{integer} 455r23 457r18 457r31 459r18
+494i13 Front_Len{integer} 503r15 509r26 510r21 510r38 511r21
+498i13 Back_Len{integer} 503r39
+502i13 Result_Length{integer} 506r35
+506a13 Result{string} 509m13 510m13 511m13 511r50 513r20
+543A15 Result_Type{string}<integer> 547r17 553r22
+553a13 Result{543A15} 557m16 560m13 561r20
+556i17 J{integer} 557r24
+588a7 Result{string} 592m10 595r14
+591i11 J{integer} 592r18 592r69
+603i11 J{integer} 604r18 604r48
+612a7 Result{string} 617m10 620r14
+616i11 J{integer} 617r18 617r66
+629i11 J{integer} 630r18 630r45
+646i16 Low{natural} 650r19 655r69 657r47
+655A27 Result_Type{string}<integer> 657r26
+663i16 High{natural} 667r19 672r55 674r63
+672A27 Result_Type{string}<integer> 674r26
+680i16 Low{natural} 684r19 691r62 693r47
+689i19 High{natural} 691r55 693r54
+691A27 Result_Type{string}<integer> 693r26
+717i7 High{integer} 728m7 733r10 738r46 741r45
+717i13 Low{integer} 720m7 724r10 738r53 741r38
+738A18 Result_Type{string}<integer> 741r17
+X 8 a-strmap.ads
+38K21*Maps 6|22w18 109r17 122r17 122r43 147r17 147r43 156r17 171r16 179r17
+. 216r17 216r43 224r17 235r16 243r16 262r16 276r17 283r17 294r17 300r17 495r16
+. 496r16 505r17 506r17 7|41w18 41r40 54r17 54r43 61r17 66r16 76r17 76r43
+. 84r17 89r17 109r17 109r43 115r17 120r16 125r16 134r16 586r17 600r17 610r17
+. 625r17 714r16 715r16 747r17 748r17 8|411e21
+46A9*Character_Set<137A9> 6|171r21 179r22 235r21 243r21 262r21 495r21 496r21
+. 505r22 506r22 7|66r21 89r22 120r21 125r21 134r21 714r21 715r21 747r22 748r22
+107A9*Character_Mapping(character) 6|122r22 147r22 216r22 283r22 300r22 7|54r22
+. 76r22 109r22 586r22 600r22
+111V13*Value{character} 7|592s45 604s24
+115a4*Identity{107A9} 6|122r48 147r48 216r48 7|54r48 76r48 109r48
+130P9*Character_Mapping_Function(character) 6|109r22 156r22 224r22 276r22
+. 294r22 7|61r22 84r22 115r22 610r22 625r22
+137A9 Character_Set_Internal(boolean)<character>
+X 10 a-strsea.ads
+41K29*Search 7|42w18 55r24 62r24 69r24 77r24 85r24 93r24 98r24 104r24 110r24
+. 116r24 121r24 130r24 138r24 10|121e23
+44V13*Index{natural} 7|55r31
+50V13*Index{natural} 7|62r31
+56V13*Index{natural} 7|69r31
+62V13*Index{natural} 7|77r31
+69V13*Index{natural} 7|85r31
+76V13*Index{natural} 7|93r31
+83V13*Index_Non_Blank{natural} 7|98r31
+87V13*Index_Non_Blank{natural} 7|104r31
+92V13*Count{natural} 7|110r31
+97V13*Count{natural} 7|116r31
+102V13*Count{natural} 7|121r31
+106U14*Find_Token 7|130r31
+114U14*Find_Token 7|138r31
+

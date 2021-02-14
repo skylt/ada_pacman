@@ -1,0 +1,111 @@
+V "GNAT Lib v2020"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/skylt/src/ada_minipacman/pacman/adartl/ravenscar-full-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U ada.finalization%s	a-finali.ads		86c56e5a EE OL PU PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+
+D ada.ads		20210207012509 76789da1 ada%s
+D a-except.ads		20210207012509 a7106115 ada.exceptions%s
+D a-finali.ads		20210207012509 bf4f806b ada.finalization%s
+D a-stream.ads		20210207012509 119b8fb3 ada.streams%s
+D a-tags.ads		20210207012509 edddc8f0 ada.tags%s
+D a-unccon.ads		20210207012509 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210207012509 5ab55268 interfaces%s
+D i-stm32.ads		20210207012509 2ad0960b interfaces.stm32%s
+D i-stm32-pwr.ads	20210207012509 4a098e84 interfaces.stm32.pwr%s
+D system.ads		20210207012509 db831581 system%s
+D s-bb.ads		20210207012509 09e072ae system.bb%s
+D s-bbbopa.ads		20210207012509 5e9af419 system.bb.board_parameters%s
+D s-bbbosu.ads		20210207012509 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20210207012509 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20210207012509 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20210207012509 b5961a30 system.bb.mcu_parameters%s
+D s-bbpara.ads		20210207012509 431abc17 system.bb.parameters%s
+D s-bbthre.ads		20210207012509 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20210207012509 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20210207012509 ad086247 system.bb.time%s
+D s-finroo.ads		20210207012509 4ff27390 system.finalization_root%s
+D s-multip.ads		20210207012509 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20210207012509 229b14dd system.os_interface%s
+D s-parame.ads		20210207012509 8e90778f system.parameters%s
+D s-secsta.ads		20210207012509 56a2861c system.secondary_stack%s
+D s-stalib.ads		20210207012509 6b7a13f2 system.standard_library%s
+D s-stm32.ads		20210207012509 e898dba2 system.stm32%s
+D s-stoele.ads		20210207012509 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210207012509 ed88f8fb system.storage_elements%b
+D s-tasinf.ads		20210207012509 801abd01 system.task_info%s
+D s-taspri.ads		20210207012509 351848fa system.task_primitives%s
+D s-taskin.ads		20210207012509 58b15916 system.tasking%s
+D s-traent.ads		20210207012509 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210207012509 5ecf7212 system.unsigned_types%s
+G a e
+G c Z s s [initialize ada__finalization 46 14 none]
+G c Z s s [adjust ada__finalization 47 14 none]
+G c Z s s [finalize ada__finalization 48 14 none]
+G c Z s s [initialize ada__finalization 53 14 none]
+G c Z s s [finalize ada__finalization 54 14 none]
+G c Z s s [controlledDA ada__finalization 59 9 none]
+G c Z s s [controlledDF ada__finalization 59 9 none]
+G c Z s s [controlledIP ada__finalization 59 9 none]
+G c Z s s [limited_controlledDF ada__finalization 65 9 none]
+G c Z s s [limited_controlledIP ada__finalization 65 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 3|40r9 68r5
+X 3 a-finali.ads
+40K13*Finalization 1|16k9 3|57E12 68l9 68e21
+43H9*Controlled<21|40R9> 44r41 46P14 46r42 47P14 47r42 48P14 48r42 59c9 59e72
+46U14*Initialize<21|44p14> 46=26
+46r26 Object{43R9}
+47U14*Adjust<21|42p14> 47=26
+47r26 Object{43R9}
+48U14*Finalize<21|43p14> 48=26
+48r26 Object{43R9}
+50H9*Limited_Controlled<21|40R9> 51r41 53P14 53r42 54P14 54r42 65c9 66e55
+. 21|42p14
+53U14*Initialize<21|44p14> 53=26
+53r26 Object{50R9}
+54U14*Finalize<21|43p14> 54=26
+54r26 Object{50R9}
+57K12 SFR=57:31 59r36 66r19
+X 10 system.ads
+50K9*System 3|37r6 57r24 10|164e11
+X 21 s-finroo.ads
+34K16*Finalization_Root 3|37w13 57r31 21|46e29
+40H9*Root_Controlled 3|59r40 66r23 21|40e55
+X 25 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 32 s-taskin.ads
+407V13*Get_Sec_Stack{25|46P9} 408i<c,__gnat_get_secondary_stack>22
+

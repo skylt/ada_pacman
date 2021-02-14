@@ -1,0 +1,163 @@
+V "GNAT Lib v2020"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/skylt/src/ada_minipacman/pacman/adartl/ravenscar-full-stm32f429disco/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatg
+A -fno-delete-null-pointer-checks
+A -gnatp
+A -gnatn2
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U gnat.wide_string_split%b  g-wistsp.ads	1c3e04f4 NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.wide_maps%s  a-stwima.adb		a-stwima.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+W gnat%s		gnat.ads		gnat.ali
+W gnat.array_split%s
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+U gnat.wide_string_split%s  g-wistsp.ads	1b5547d6 EB EE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.wide_maps%s  a-stwima.adb		a-stwima.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.array_split%s
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20210207012509 76789da1 ada%s
+D a-except.ads		20210207012509 a7106115 ada.exceptions%s
+D a-finali.ads		20210207012509 bf4f806b ada.finalization%s
+D a-ioexce.ads		20210207012509 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210207012509 119b8fb3 ada.streams%s
+D a-string.ads		20210207012509 90ac6797 ada.strings%s
+D a-stwima.ads		20210207012509 09a6f5ac ada.strings.wide_maps%s
+D a-tags.ads		20210207012509 edddc8f0 ada.tags%s
+D a-unccon.ads		20210207012509 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20210207012509 eff36322 ada.unchecked_deallocation%s
+D gnat.ads		20210207012509 b5988c27 gnat%s
+D g-arrspl.ads		20210207012509 bb553aa9 gnat.array_split%s
+D g-arrspl.adb		20210207012509 d5c20566 gnat.array_split%b
+D g-wistsp.ads		20210207012509 1c3e04f4 gnat.wide_string_split%s
+D g-wistsp.ads		20210207012509 1c3e04f4 gnat.wide_string_split%b
+D interfac.ads		20210207012509 5ab55268 interfaces%s
+D i-stm32.ads		20210207012509 2ad0960b interfaces.stm32%s
+D i-stm32-pwr.ads	20210207012509 4a098e84 interfaces.stm32.pwr%s
+D system.ads		20210207012509 db831581 system%s
+D s-bb.ads		20210207012509 09e072ae system.bb%s
+D s-bbbopa.ads		20210207012509 5e9af419 system.bb.board_parameters%s
+D s-bbbosu.ads		20210207012509 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20210207012509 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20210207012509 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20210207012509 b5961a30 system.bb.mcu_parameters%s
+D s-bbpara.ads		20210207012509 431abc17 system.bb.parameters%s
+D s-bbthre.ads		20210207012509 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20210207012509 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20210207012509 ad086247 system.bb.time%s
+D s-finmas.ads		20210207012509 7811a767 system.finalization_masters%s
+D s-finroo.ads		20210207012509 4ff27390 system.finalization_root%s
+D s-multip.ads		20210207012509 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20210207012509 229b14dd system.os_interface%s
+D s-parame.ads		20210207012509 8e90778f system.parameters%s
+D s-secsta.ads		20210207012509 56a2861c system.secondary_stack%s
+D s-stalib.ads		20210207012509 6b7a13f2 system.standard_library%s
+D s-stm32.ads		20210207012509 e898dba2 system.stm32%s
+D s-stoele.ads		20210207012509 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210207012509 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20210207012509 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20210207012509 e251976f system.storage_pools.subpools%s
+D s-stratt.ads		20210207012509 9a2744e9 system.stream_attributes%s
+D s-stratt.adb		20210207012509 869228ba system.stream_attributes%b
+D s-statxd.ads		20210207012509 b54789f6 system.stream_attributes.xdr%s
+D s-tasinf.ads		20210207012509 801abd01 system.task_info%s
+D s-taspri.ads		20210207012509 351848fa system.task_primitives%s
+D s-taskin.ads		20210207012509 58b15916 system.tasking%s
+D s-traent.ads		20210207012509 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210207012509 5ecf7212 system.unsigned_types%s
+G a e
+G c Z s s [create gnat__wide_string_split 83 14 39_1]
+G c Z s s [create gnat__wide_string_split 97 14 39_1]
+G c Z s s [set gnat__wide_string_split 104 14 39_1]
+G c Z s s [set gnat__wide_string_split 111 14 39_1]
+G c Z s s [slice_count gnat__wide_string_split 120 13 39_1]
+G c Z s s [slice gnat__wide_string_split 124 13 39_1]
+G c Z s s [separators gnat__wide_string_split 141 13 39_1]
+G c Z s s [separators gnat__wide_string_split 152 13 39_1]
+G c Z s s [initialize gnat__wide_string_split 187 14 39_1]
+G c Z s s [adjust gnat__wide_string_split 188 14 39_1]
+G c Z s s [finalize gnat__wide_string_split 189 14 39_1]
+G c Z s s [slice_setDA gnat__wide_string_split 183 9 39_1]
+G c Z s s [slice_setDF gnat__wide_string_split 183 9 39_1]
+G c Z s s [slice_setIP gnat__wide_string_split 183 9 39_1]
+G c Z s s [Tslice_separatorsBIP gnat__wide_string_split 135 4 39_1]
+G c Z s s [separators_indexesIP gnat__wide_string_split 150 9 39_1]
+G c Z s s [slice_infoIP gnat__wide_string_split 163 9 39_1]
+G c Z s s [slices_indexesIP gnat__wide_string_split 169 9 39_1]
+G c Z s s [dataIP gnat__wide_string_split 174 9 39_1]
+G c Z s s [free gnat__wide_string_split 36 14 39_1]
+G c Z s s [free gnat__wide_string_split 39 14 39_1]
+G c Z s s [count gnat__wide_string_split 42 13 39_1]
+X 1 ada.ads
+16K9*Ada 20e8 15|36r6 36r33
+X 6 a-string.ads
+16K13*Strings 35e16 15|36r10 36r37
+X 7 a-stwima.ads
+38K21*Wide_Maps 240e26 15|36w18 42r24 43r24 44r24
+45R9*Wide_Character_Set<3|43R9> 173e14 15|42r34
+94V13*Is_In{boolean} 15|44r34
+110V13*To_Set{45R9} 15|43r34
+X 11 gnat.ads
+34K9*GNAT 57e9 15|37r6 39r9 39r39
+X 12 g-arrspl.ads
+39E9 Element 15|40r4
+42A9 Element_Sequence(39E9)<integer> 15|41r4
+45+9 Element_Set 15|42r4
+51V18 To_Set{45+9} 15|43r4
+55V18 Is_In{boolean} 15|44r4
+58k14*Array_Split 191e21 15|37w11 39r44
+X 15 g-wistsp.ads
+39K14*Wide_String_Split[12|58] 11|34k9
+X 35 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 47 s-taskin.ads
+407V13*Get_Sec_Stack{35|46P9} 408i<c,__gnat_get_secondary_stack>22
+
